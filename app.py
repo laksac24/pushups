@@ -331,7 +331,7 @@ async def process_frame(data: ImageData):
 
         if angle2:
             if 160 < angle2 < 190:
-                per = np.interp(angle, (80, 160), (0, 100))
+                per = np.interp(angle, (100, 160), (0, 100))
                 if per == 0 and dir == 0:
                     count += 0.5
                     dir = 1
